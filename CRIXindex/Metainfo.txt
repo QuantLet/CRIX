@@ -5,9 +5,18 @@ Published in :  CRIX - a CRyptocurrency IndeX
 
 Description : CRIXindex gives a plot which shows the performance of the cryptocurrency index CRIX.
 
-Keywords : CRIX, index, cryptocurrency, crypto, plot
+Keywords : 
+ - CRIX
+ - index
+ - cryptocurrency
+ - crypto
+ - plot
 
-See also : CRIXhnoptions, CRIXoutmarket, CRIXoutmarketTERES, CRIXvarreturn
+See also : 
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
 
 Author : Simon Trimborn
 
