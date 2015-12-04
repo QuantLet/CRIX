@@ -1,39 +1,14 @@
-# ------------------------------------------------------------------------------
-# Book: CRIX
-# ------------------------------------------------------------------------------
-# Quantlet: CRIXoutmarket
-# ------------------------------------------------------------------------------
-# Description: CRIXoutmarket gives a plot which shows the performance of the
-# indices S&P500, DAX, STI, RTSI and ATHEX against CRIX.
-# ------------------------------------------------------------------------------
-# Usage: -
-# ------------------------------------------------------------------------------
-# Inputs: crix.csv, SP500_index.csv, DAX_index.csv, STI_index.csv,
-# RTSI_index.csv, ATHEX_index.csv
-# ------------------------------------------------------------------------------
-# Output: Returns a plot with S&P500, DAX, STI, RTSI, ATHEX and the CRIX.
-# ------------------------------------------------------------------------------
-# Example: Plot with S&P500, DAX, STI, RTSI, ATHEX and the CRIX.
-# ------------------------------------------------------------------------------
-# See also: CRIXBtcLtcXrp, CRIXESout, CRIXbic, CRIXinmark, CRIXmarket, CRIXindex,
-# CRIXbtcindex, CRIXvarreturn, CRIXoutmarket, CRIXoutmarketTERES, CRIXhnoptions
-# ------------------------------------------------------------------------------
-# Keywords: CRIX, index, cryptocurrency, crypto, plot, btc, bitcoin, dax, sti,
-#           rtsi, S&P500, athex, performance
-# ------------------------------------------------------------------------------
-# Author: Simon Trimborn
-# ------------------------------------------------------------------------------
-
-
 rm(list = ls(all = TRUE))
-# please change your working directory setwd('C:/...')
+# please change your working directory 
+# setwd('C:/...')
+
 plot_crix   = read.csv("crix.csv", header = T, row.names = 1)
 index_SP500 = read.csv("SP500_index.csv", header = T)
 index_DAX   = read.csv("DAX_index.csv", header = T)
 index_STI   = read.csv("STI_index.csv", header = T)
 index_RTSI  = read.csv("RTSI_index.csv", header = T)
 index_ATHEX = read.csv("ATHEX_index.csv", header = T)
-# 
+
 line_index = rep(1000, dim(plot_crix)[1])
 names(line_index) = rownames(plot_crix)
 plot_xaxis = c(as.Date(rownames(plot_crix)[1]) - 1, 

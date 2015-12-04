@@ -1,51 +1,8 @@
-# ------------------------------------------------------------------------------
-# Book:         CRIX
-# ------------------------------------------------------------------------------
-# Quantlet:     CRIXhnoptions
-# ------------------------------------------------------------------------------
-# Description:  CRIXhnoptions provides a matrix that show the prices of
-#               Heston Nandi Put Options for different Strikes and different
-#               times to maturity. The prices are provided for CRIX and S&P500.
-#               Heston and Nandi proposed in their paper "A Closed-Form GARCH
-#               Option Valuation Model" a purely stock price based option 
-#               valuation model. Since for the CRIX doesn't exist any options,
-#               the volatility can't be computed from other options. This
-#               drawback requires an approach which works without option data.
-#               The prices of the S&P500 has been adjusted such that the last
-#               price is the same than for the CRIX. By this procedure, the 
-#               two time series become comparable for different Strikes and 
-#               Maturities.
-# ------------------------------------------------------------------------------
-# Usage:        -
-# ------------------------------------------------------------------------------
-# Inputs:       crix.csv, SP500_index.csv
-# ------------------------------------------------------------------------------
-# Output:       Returns a matrix that show the prices of
-#               Heston Nandi Put Options for different Strikes (columns) and 
-#               different times to maturity (rows). The prices are provided for 
-#               CRIX (left part of matrix) and S&P500 (right part of matrix).
-# ------------------------------------------------------------------------------
-# Example:      A matrix that show the prices of
-#               Heston Nandi Put Options for different Strikes (columns) and 
-#               different times to maturity (rows). The prices are provided for 
-#               CRIX (left part of matrix) and S&P500 (right part of matrix).
-# ------------------------------------------------------------------------------
-# See also:     CRIXBtcLtcXrp, CRIXESout, CRIXbic, CRIXinmark, CRIXmarket, 
-#               CRIXindex, CRIXbtcindex, CRIXvarreturn, CRIXoutmarket,
-#               CRIXoutmarketTERES
-# ------------------------------------------------------------------------------
-# Keywords:     CRIX, index, cryptocurrency, crypto, S&P500, option, 
-#               put, heston, GARCH
-# ------------------------------------------------------------------------------
-# Author:       Simon Trimborn
-# ------------------------------------------------------------------------------
-
-
 rm(list=ls(all=TRUE))
-#
+
 # please change your working directory
 #setwd("C:/...")
-#
+
 # install and load packages
 libraries = c("fOptions")
 lapply(libraries, function(x) if (!(x %in% installed.packages())) {

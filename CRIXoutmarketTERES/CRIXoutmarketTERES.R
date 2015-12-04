@@ -1,61 +1,28 @@
-# ------------------------------------------------------------------------------
-# Book: CRIX
-# ------------------------------------------------------------------------------
-# Quantlet: CRIXoutmarketTERES
-# ------------------------------------------------------------------------------
-# Description: CRIXoutmarketTERES provides a matrix which shows the risk of
-# S&P500, DAX, STI, RTSI and ATHEX against CRIX measured by Expected Shortfall,
-# estimated by an Extreme Value Approach (EVT) and Tail Event Risk Expected
-# Shortfall (TERES).
-# ------------------------------------------------------------------------------
-# Usage: -
-# ------------------------------------------------------------------------------
-# Inputs: crix.csv, SP500_index.csv, DAX_index.csv, STI_index.csv,
-# RTSI_index.csv, ATHEX_index.csv
-# ------------------------------------------------------------------------------
-# Output: Returns a matrix with the EVT and TERES result for S&P500, DAX, STI,
-# RTSI, ATHEX and the CRIX.
-# ------------------------------------------------------------------------------
-# Example: Matrix with the EVT and TERES result for S&P500, DAX, STI, RTSI, 
-# ATHEX and the CRIX.
-# ------------------------------------------------------------------------------
-# See also: CRIXBtcLtcXrp, CRIXESout, CRIXbic, CRIXinmark, CRIXmarket, 
-# CRIXindex, CRIXbtcindex, CRIXvarreturn, CRIXoutmarket, CRIXhnoptions
-# ------------------------------------------------------------------------------
-# Keywords: CRIX, index, cryptocurrency, crypto, plot, btc, bitcoin, TERES, EVT,
-# S&P500, dax, rtsi, sti, athex, expected shortfall
-# ------------------------------------------------------------------------------
-# Author: Simon Trimborn
-# ------------------------------------------------------------------------------
-
-
 rm(list = ls(all = TRUE))
-# please change your working directory setwd('C:/...')
-#
+# please change your working directory
+# setwd('C:/...')
+
 # install and load packages
 libraries = c("fGarch", "expectreg", "evd")
 lapply(libraries, function(x) if (!(x %in% installed.packages())) {
   install.packages(x)
 })
 lapply(libraries, library, quietly = TRUE, character.only = TRUE)
-#
-# 
+
 plot_crix   = read.csv("crix.csv", header = T, row.names = 1)
 index_SP500 = read.csv("SP500_index.csv", header = T)
 index_DAX   = read.csv("DAX_index.csv", header = T)
 index_STI   = read.csv("STI_index.csv", header = T)
 index_RTSI  = read.csv("RTSI_index.csv", header = T)
 index_ATHEX = read.csv("ATHEX_index.csv", header = T)
-# 
+ 
 EScomp = function(data) {
-  Stock = data
-  y     = Stock
-  y     = diff(log(y))
-  # 
-  GARCHvola = garchFit(~garch(1, 1), data = y, trace = F)
-  ytest     = residuals(GARCHvola)/volatility(GARCHvola)
-  ywhite    = residuals(GARCHvola)/volatility(GARCHvola)
-  # 
+  Stock      = data
+  y          = Stock
+  y          = diff(log(y))
+  GARCHvola  = garchFit(~garch(1, 1), data = y, trace = F)
+  ytest      = residuals(GARCHvola)/volatility(GARCHvola)
+  ywhite     = residuals(GARCHvola)/volatility(GARCHvola) 
   windowsize = length(y) - 1
   theta      = 0.01
   qtheta     = quantile(y, theta)
@@ -79,9 +46,9 @@ EScomp = function(data) {
       break
     }
   }
-  # 
+
   results = matrix(0, 5, (length(y) - windowsize))
-  # 
+
   testExp       = c()
   testExpFunc   = c()
   testHist      = c()
@@ -89,12 +56,12 @@ EScomp = function(data) {
   varind        = 0
   varianceStore = c()
   volaStore     = c()
-  # 
+
   for (z in seq(1, length(y) - windowsize)) {
     window = y[z:(z + windowsize)]
     whitewindow = ywhite[z:(z + windowsize)]
     qtheta = quantile(window, theta)
-    # 
+
     for (i in 1:10000) {
       etau = expectile(window, tau)
       if (etau < qtheta) {
@@ -114,10 +81,10 @@ EScomp = function(data) {
         break
       }
     }
-    # 
+ 
     ex       = expectile(window, tau)
     expectES = ex * (1 + tau/((1 - 2 * tau) * theta))
-    # 
+
     L     = -whitewindow
     zq    = quantile(L, 1 - theta)
     thr   = quantile(L, 0.9)
@@ -125,7 +92,7 @@ EScomp = function(data) {
     scale = as.numeric(fitty$scale)
     shape = as.numeric(fitty$param[2])
     evtES = -(zq/(1 - shape) + (scale - shape * thr)/(1 - shape))
-    # 
+
     results[1, z] = GARCHvola@fit$par[1]
     results[2, z] = volatility(GARCHvola)[length(volatility(GARCHvola))]
     results[3, z] = expectES
@@ -134,14 +101,14 @@ EScomp = function(data) {
   }
   results
 }
-# 
+ 
 ES_CRIX  = EScomp(plot_crix$Price)
 ES_SP500 = EScomp(index_SP500$Price)
 ES_DAX   = EScomp(index_DAX$Price)
 ES_STI   = EScomp(index_STI$Price)
 ES_RTSI  = EScomp(index_RTSI$Price)
 ES_ATHEX = EScomp(index_ATHEX$Price)
-# 
+
 table_ES = matrix(c(ES_CRIX[4, 1] * ES_CRIX[2, 1] + ES_CRIX[1, 1], ES_CRIX[3, 1], 
   ES_SP500[4, 1] * ES_SP500[2, 1] + ES_SP500[1, 1], ES_SP500[3, 1], ES_DAX[4, 1] * 
     ES_DAX[2, 1] + ES_DAX[1, 1], ES_DAX[3, 1], ES_STI[4, 1] * ES_STI[2, 1] + 
@@ -150,5 +117,4 @@ table_ES = matrix(c(ES_CRIX[4, 1] * ES_CRIX[2, 1] + ES_CRIX[1, 1], ES_CRIX[3, 1]
     1]), nrow = 6, ncol = 2, byrow = T)
 colnames(table_ES) = c("EVT", "TERES")
 rownames(table_ES) = c("CRIX", "SP500", "DAX", "STI", "RTSI", "ATHEX")
-# 
 table_ES 
