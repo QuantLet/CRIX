@@ -1,7 +1,7 @@
 
-Name of Quantlet : CRIXhnoptions
+Name of Quantlet : 'CRIXhnoptions'
 
-Published in :  CRIX - a CRyptocurrency IndeX
+Published in :  'CRIX - a CRyptocurrency IndeX'
 
 Description : 'CRIXhnoptions provides a matrix that show the prices of
                Heston Nandi Put Options for different Strikes and different
@@ -22,7 +22,7 @@ Keywords :
  - cryptocurrency
  - crypto
  - plot
- - S&P500
+ - 'S&P500'
  - option
  - put
  - heston
@@ -36,11 +36,11 @@ See also :
 
 Author : Simon Trimborn
 
-Submitted :  Fri, December 04 2015 by jack6534
+Submitted :  Fri, December 04 2015 by Simon Trimborn
 
 Datafile : 
  - crix.csv
- - SP500_index.csv
+ - 'SP500_index.csv'
 
 Example : 'A matrix that show the prices of
            Heston Nandi Put Options for different Strikes (columns) and 
