@@ -8,8 +8,8 @@ Description : 'CRIXhnoptions provides a matrix that show the prices of
                times to maturity. The prices are provided for CRIX and S&P500.
                Heston and Nandi proposed in their paper "A Closed-Form GARCH
                Option Valuation Model" a purely stock price based option 
-               valuation model. Since for the CRIX doesn't exist any options,
-               the volatility can't be computed from other options. This
+               valuation model. Since for the CRIX doesn''t exist any options,
+               the volatility can''t be computed from other options. This
                drawback requires an approach which works without option data.
                The prices of the S&P500 has been adjusted such that the last
                price is the same than for the CRIX. By this procedure, the 
