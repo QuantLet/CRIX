@@ -1,0 +1,40 @@
+
+Name of Quantlet : CRIXfamdiffloss
+
+Published in :  'CRIX - a CRyptocurrency IndeX'
+
+Description : CRIXfamdiffloss gives a table which shows the Mean Squared Error (MSE) and the Mean Directional Accuracy (MDA) of the indices CRIX, ECRIX and EFCRIX compared to the total market.
+
+Keywords : 
+ - CRIX
+ - ECRIX
+ - EFCRIX
+ - index
+ - cryptocurrency
+ - crypto
+ - plot
+ - MSE
+ - MDA
+
+See also : 
+ - CRIXindex
+ - ECRIXindex
+ - EFCRIXindex
+ - CRIXfamdiff
+ - DAXCRIXloss
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
+
+Author : Simon Trimborn
+
+Submitted :  Fri, December 12 2015 by Simon Trimborn
+
+Datafile : 
+ - crix.csv
+ - ecrix.csv
+ - efcrix.csv
+ - crix_all.csv
+
+Example : Table of the MSE and MDA of CRIX, ECRIX, EFCRIX compared to the total market.

@@ -1,19 +1,20 @@
 
-Name of Quantlet : CRIXindex
+Name of Quantlet : ECRIXindex
 
 Published in :  'CRIX - a CRyptocurrency IndeX'
 
-Description : CRIXindex gives a plot which shows the performance of the cryptocurrency index CRIX.
+Description : ECRIXindex gives a plot which shows the performance of the cryptocurrency index ECRIX.
 
 Keywords : 
  - CRIX
+ - ECRIX
  - index
  - cryptocurrency
  - crypto
  - plot
 
 See also : 
- - ECRIXindex
+ - CRIXindex
  - EFCRIXindex
  - CRIXfamdiff
  - CRIXfamdiffloss
@@ -27,6 +28,6 @@ Author : Simon Trimborn
 
 Submitted :  Fri, December 12 2015 by Simon Trimborn
 
-Datafile : crix.csv
+Datafile : ecrix.csv
 
-Example : Plot with the CRIX.
+Example : Plot with the ECRIX.
