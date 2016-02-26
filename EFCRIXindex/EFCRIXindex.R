@@ -15,4 +15,4 @@ names_crix        = efcrix$V1[last_substr_which]
 
 plot(efcrix[, 2], type = "l", col = "darkgreen", xaxt = "n", lwd = 3, 
      xlab = "Date", ylab = "Performance of EFCRIX")
-axis(1, at = last_substr_which, label = names_crix)
+axis(1, at = c(last_substr_which, 550), label = c(names_crix, "2016-02-01"))

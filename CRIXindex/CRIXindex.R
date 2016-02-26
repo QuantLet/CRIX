@@ -13,4 +13,4 @@ names_crix        = crix$V1[last_substr_which]
 
 plot(crix[, 2], type = "l", col = "blue3", xaxt = "n", lwd = 3, xlab = "Date", 
      ylab = "Performance of CRIX")
-axis(1, at = last_substr_which, label = names_crix)
+axis(1, at = c(last_substr_which, 550), label = c(names_crix, "2016-02-01"))
