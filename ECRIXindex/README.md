@@ -1,5 +1,5 @@
 
-[<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/banner.png" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
 
 ## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **ECRIXindex** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
 
@@ -7,36 +7,24 @@
 
 Name of Quantlet : ECRIXindex
 
-Published in :  'CRIX - a CRyptocurrency IndeX'
+Published in : CRIX - a CRyptocurrency IndeX
 
-Description : ECRIXindex gives a plot which shows the performance of the cryptocurrency index ECRIX.
+Description : 'ECRIXindex gives a plot which shows the performance of the cryptocurrency index
+ECRIX.'
 
-Keywords : 
- - CRIX
- - ECRIX
- - index
- - cryptocurrency
- - crypto
- - plot
+Keywords : CRIX, ECRIX, index, cryptocurrency, crypto, plot
 
-See also : 
- - CRIXindex
- - EFCRIXindex
- - CRIXfamdiff
- - CRIXfamdiffloss
- - DAXCRIXloss
- - CRIXhnoptions
- - CRIXoutmarket
- - CRIXoutmarketTERES
- - CRIXvarreturn
+See also : 'CRIXindex, EFCRIXindex, CRIXfamdiff, CRIXfamdiffloss, DAXCRIXloss, CRIXhnoptions,
+CRIXoutmarket, CRIXoutmarketTERES, CRIXvarreturn'
 
 Author : Simon Trimborn
 
-Submitted :  Fri, December 12 2015 by Simon Trimborn
+Submitted : Fri, February 26 2016 by Simon Trimborn
 
 Datafile : ecrix.csv
 
 Example : Plot with the ECRIX.
+
 ```
 
 ![Picture1](ECRIXindex_plot.png)
@@ -60,5 +48,5 @@ names_crix = ecrix$V1[last_substr_which]
 
 plot(ecrix[, 2], type = "l", col = "red3", xaxt = "n", lwd = 3, xlab = "Date", 
      ylab = "Performance of ECRIX")
-axis(1, at = last_substr_which, label = names_crix)
+axis(1, at = c(last_substr_which, 550), label = c(names_crix, "2016-02-01"))
 ```

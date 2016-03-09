@@ -1,5 +1,5 @@
 
-[<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/banner.png" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
 
 ## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **DAXCRIXloss** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
 
@@ -7,44 +7,24 @@
 
 Name of Quantlet : DAXCRIXloss
 
-Published in :  'CRIX - a CRyptocurrency IndeX'
+Published in : CRIX - a CRyptocurrency IndeX
 
-Description : DAXCRIXloss gives a table which shows the Mean Squared Error (MSE) and the Mean Directional Accuracy (MDA) of the indices DAX and DAXCRIX compared to the total market.
+Description : 'DAXCRIXloss gives a table which shows the Mean Squared Error (MSE) and the Mean
+Directional Accuracy (MDA) of the indices DAX and DAXCRIX compared to the total market.'
 
-Keywords : 
- - CRIX
- - ECRIX
- - EFCRIX
- - DAX
- - DAXCRIX
- - index
- - cryptocurrency
- - crypto
- - plot
- - MSE
- - MDA
+Keywords : CRIX, ECRIX, EFCRIX, DAX, DAXCRIX, index, cryptocurrency, crypto, plot, MSE, MDA
 
-See also : 
- - CRIXindex
- - ECRIXindex
- - EFCRIXindex
- - CRIXfamdiff
- - CRIXfamdiffloss
- - CRIXhnoptions
- - CRIXoutmarket
- - CRIXoutmarketTERES
- - CRIXvarreturn
+See also : 'CRIXindex, ECRIXindex, EFCRIXindex, CRIXfamdiff, CRIXfamdiffloss, CRIXhnoptions,
+CRIXoutmarket, CRIXoutmarketTERES, CRIXvarreturn'
 
 Author : Simon Trimborn
 
-Submitted :  Fri, December 12 2015 by Simon Trimborn
+Submitted : Fri, December 12 2015 by Simon Trimborn
 
-Datafile : 
- - daxcrix.csv
- - DAXcsv.csv
- - totalmarket.csv
+Datafile : daxcrix.csv, DAXcsv.csv, totalmarket.csv
 
 Example : Table of the MSE and MDA of DAX and DAXCRIX compared to the total market.
+
 ```
 
 ![Picture1](DAXCRIXloss_table.PNG)

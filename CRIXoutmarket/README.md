@@ -1,5 +1,5 @@
 
-[<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/banner.png" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
 
 ## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **CRIXoutmarket** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
 
@@ -7,45 +7,24 @@
 
 Name of Quantlet : CRIXoutmarket
 
-Published in :  'CRIX - a CRyptocurrency IndeX'
+Published in : CRIX - a CRyptocurrency IndeX
 
-Description : 'CRIXoutmarket gives a plot which shows the performance of the
-               indices S&P500, DAX, STI, RTSI and ATHEX against CRIX.'
+Description : 'CRIXoutmarket gives a plot which shows the performance of the indices S&P500, DAX,
+STI, RTSI and ATHEX against CRIX.'
 
-Keywords : 
- - CRIX
- - index
- - cryptocurrency
- - crypto
- - plot
- - 'S&P500'
- - btc
- - bitcoin
- - dax
- - sti
- - rtsi
- - athex
- - performance
+Keywords : 'CRIX, index, cryptocurrency, crypto, plot, S&P500, btc, bitcoin, dax, sti, rtsi, athex,
+performance'
 
-See also : 
- - CRIXindex
- - CRIXhnoptions
- - CRIXoutmarketTERES
- - CRIXvarreturn
+See also : CRIXindex, CRIXhnoptions, CRIXoutmarketTERES, CRIXvarreturn
 
 Author : Simon Trimborn
 
-Submitted :  Fri, December 04 2015 by Simon Trimborn
+Submitted : Fri, December 04 2015 by Simon Trimborn
 
-Datafile : 
- - crix.csv
- - 'SP500_index.csv'
- - 'DAX_index.csv'
- - 'STI_index.csv'
- - 'RTSI_index.csv'
- - 'ATHEX_index.csv'
+Datafile : crix.csv, SP500_index.csv, DAX_index.csv, STI_index.csv, RTSI_index.csv, ATHEX_index.csv
 
-Example : 'Plot with S&P500, DAX, STI, RTSI, ATHEX and the CRIX.'
+Example : Plot with S&P500, DAX, STI, RTSI, ATHEX and the CRIX.
+
 ```
 
 ![Picture1](CRIXoutmarket_plot.png)

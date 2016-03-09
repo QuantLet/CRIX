@@ -1,57 +1,36 @@
 
-[<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/banner.png" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
 
 ## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **CRIXhnoptions** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
 
 ```yaml
 
-Name of Quantlet : 'CRIXhnoptions'
+Name of Quantlet : CRIXhnoptions
 
-Published in :  'CRIX - a CRyptocurrency IndeX'
+Published in : CRIX - a CRyptocurrency IndeX
 
-Description : 'CRIXhnoptions provides a matrix that show the prices of
-               Heston Nandi Put Options for different Strikes and different
-               times to maturity. The prices are provided for CRIX and S&P500.
-               Heston and Nandi proposed in their paper "A Closed-Form GARCH
-               Option Valuation Model" a purely stock price based option 
-               valuation model. Since for the CRIX doesn''t exist any options,
-               the volatility can''t be computed from other options. This
-               drawback requires an approach which works without option data.
-               The prices of the S&P500 has been adjusted such that the last
-               price is the same than for the CRIX. By this procedure, the 
-               two time series become comparable for different Strikes and 
-               Maturities.'
+Description : 'CRIXhnoptions provides a matrix that show the prices of Heston Nandi Put Options for
+different Strikes and different times to maturity. The prices are provided for CRIX and S&P500.
+Heston and Nandi proposed in their paper "A Closed-Form GARCH Option Valuation Model" a purely
+stock price based option valuation model. Since for the CRIX doesn''t exist any options, the
+volatility can''t be computed from other options. This drawback requires an approach which works
+without option data. The prices of the S&P500 has been adjusted such that the last price is the
+same than for the CRIX. By this procedure, the two time series become comparable for different
+Strikes and Maturities.'
 
-Keywords : 
- - CRIX
- - index
- - cryptocurrency
- - crypto
- - plot
- - 'S&P500'
- - option
- - put
- - heston
- - GARCH
+Keywords : CRIX, index, cryptocurrency, crypto, plot, S&P500, option, put, heston, GARCH
 
-See also : 
- - CRIXindex
- - CRIXoutmarket
- - CRIXoutmarketTERES
- - CRIXvarreturn
+See also : CRIXindex, CRIXoutmarket, CRIXoutmarketTERES, CRIXvarreturn
 
 Author : Simon Trimborn
 
-Submitted :  Fri, December 04 2015 by Simon Trimborn
+Submitted : Fri, December 04 2015 by Simon Trimborn
 
-Datafile : 
- - crix.csv
- - 'SP500_index.csv'
+Datafile : crix.csv, SP500_index.csv
 
-Example : 'A matrix that show the prices of
-           Heston Nandi Put Options for different Strikes (columns) and 
-           different times to maturity (rows). The prices are provided for 
-           CRIX (left part of matrix) and S&P500 (right part of matrix).'
+Example : 'A matrix that show the prices of Heston Nandi Put Options for different Strikes
+(columns) and different times to maturity (rows). The prices are provided for CRIX (left part of
+matrix) and S&P500 (right part of matrix).'
 
 ```
 

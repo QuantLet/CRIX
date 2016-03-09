@@ -1,5 +1,5 @@
 
-[<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/banner.png" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
+[<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="880" alt="Visit QuantNet">](http://quantlet.de/index.php?p=info)
 
 ## [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **CRIXvarreturn** [<img src="https://github.com/QuantLet/Styleguide-and-Validation-procedure/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/d3/ia)
 
@@ -7,38 +7,23 @@
 
 Name of Quantlet : CRIXvarreturn
 
-Published in :  'CRIX - a CRyptocurrency IndeX'
+Published in : CRIX - a CRyptocurrency IndeX
 
-Description : 'CRIXvarreturn computes a matrix which compares the absolut return
-               and the variance, computed by a GARCH(1,1) model, of a CRIX and Bitcoin 
-               (btc) time series.'
+Description : 'CRIXvarreturn computes a matrix which compares the absolut return and the variance,
+computed by a GARCH(1,1) model, of a CRIX and Bitcoin (btc) time series.'
 
-Keywords : 
- - CRIX
- - index
- - cryptocurrency
- - crypto
- - btc
- - bitcoin
- - returns
- - variance
- - garch
+Keywords : CRIX, index, cryptocurrency, crypto, btc, bitcoin, returns, variance, garch
 
-See also : 
- - CRIXindex
- - CRIXhnoptions
- - CRIXoutmarket
- - CRIXoutmarketTERES
+See also : CRIXindex, CRIXhnoptions, CRIXoutmarket, CRIXoutmarketTERES
 
 Author : Simon Trimborn
 
-Submitted :  Fri, December 04 2015 by Simon Trimborn
+Submitted : Fri, December 04 2015 by Simon Trimborn
 
-Datafile : 
- - crix.csv
- - 'btc_index.csv'
+Datafile : crix.csv, btc_index.csv
 
 Example : A matrix with return and variance for btc and the CRIX.
+
 ```
 
 ![Picture1](CRIXvarreturn_plot.PNG)
