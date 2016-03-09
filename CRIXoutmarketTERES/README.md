@@ -5,7 +5,7 @@
 
 ```yaml
 
-Name of Quantlet : CRIXoutmarket
+Name of Quantlet : CRIXoutmarketTERES
 
 Published in :  'CRIX - a CRyptocurrency IndeX'
 
