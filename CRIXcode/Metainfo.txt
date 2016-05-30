@@ -1,0 +1,39 @@
+
+Name of Quantlet : CRIXcode
+
+Published in :  'CRIX or evaluating blockchain based currencies'
+
+Description : Contains the AIC and non parametric derivations to detect the best amount of index members for CRIX, ECRIX, EFCRIX, FDAX and FIPC.
+
+Keywords : 
+ - CRIX
+ - ECRIX
+ - EFCRIX
+ - FDAX
+ - FIPC
+ - index
+ - AIC
+ - cryptocurrency
+ - crypto
+ - non parametric
+
+See also : 
+ - CRIXindex
+ - ECRIXindex
+ - EFCRIXindex
+ - CRIXfamdiff
+ - CRIXfamdiffloss
+ - CRIXmembers
+ - FDAXloss
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
+
+Author : Simon Trimborn
+
+Submitted :  Mon, May 30 2016 by Simon Trimborn
+
+Datafile : CryptoData.RData, CRIXcodehelper.R
+
+Example: Index data for the chosen index.

@@ -1,0 +1,33 @@
+
+Name of Quantlet : ECRIXindex
+
+Published in :  'CRIX or evaluating blockchain based currencies'
+
+Description : Gives a plot which shows the performance of the cryptocurrency index ECRIX. The data were calculated with CRIXcode.R.
+
+Keywords : 
+ - CRIX
+ - ECRIX
+ - index
+ - cryptocurrency
+ - crypto
+ - plot
+
+See also : 
+ - CRIXindex
+ - EFCRIXindex
+ - CRIXfamdiff
+ - CRIXfamdiffloss
+ - FDAXloss
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
+
+Author : Simon Trimborn
+
+Submitted :  Mon, May 30 2016 by Simon Trimborn
+
+Datafile : ecrix.RData
+
+Example : Plot with the ECRIX.

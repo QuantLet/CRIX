@@ -1,0 +1,37 @@
+
+Name of Quantlet : FDAXmembersvar
+
+Published in :  'CRIX or evaluating blockchain based currencies'
+
+Description : Gives a plot which shows the number of constituents of the FDAX and its variance in the periods. The data were calculated with CRIXcode.R.
+
+Keywords : 
+ - CRIX
+ - DAX
+ - index
+ - cryptocurrency
+ - crypto
+ - variance
+ - GARCH
+
+See also : 
+ - CRIXcode
+ - CRIXindex
+ - ECRIXindex
+ - EFCRIXindex
+ - FDAXmembers
+ - CRIXfamdiff
+ - CRIXfamdiffloss
+ - FDAXloss
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
+
+Author : Simon Trimborn
+
+Submitted :  Mon, May 30 2016 by Simon Trimborn
+
+Datafile : FDAXaic.RData, FDAX.RData, DatesReallo.RData
+
+Example : Plot with the number of constituents of FDAX and the variance.

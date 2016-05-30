@@ -1,0 +1,35 @@
+
+Name of Quantlet : FIPCmembers
+
+Published in :  'CRIX or evaluating blockchain based currencies'
+
+Description : Gives a matrix which shows the number of constituents of the FIPC and IPC in the periods. The data were calculated with CRIXcode.R.
+
+Keywords : 
+ - CRIX
+ - IPC
+ - index
+ - cryptocurrency
+ - crypto
+
+See also : 
+ - CRIXcode
+ - CRIXindex
+ - ECRIXindex
+ - EFCRIXindex
+ - FDAXmembers
+ - CRIXfamdiff
+ - CRIXfamdiffloss
+ - FDAXloss
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
+
+Author : Simon Trimborn
+
+Submitted :  Mon, May 30 2016 by Simon Trimborn
+
+Datafile : FIPCaic.RData
+
+Example : Plot with the number of constituents of FIPC and IPC.

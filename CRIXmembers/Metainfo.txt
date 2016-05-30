@@ -1,0 +1,31 @@
+
+Name of Quantlet : CRIXmembers
+
+Published in :  'CRIX or evaluating blockchain based currencies'
+
+Description : Gives a matrix which shows the number of constituents of the indices in the periods. The data were calculated with CRIXcode.R.
+
+Keywords : 
+ - CRIX
+ - index
+ - cryptocurrency
+ - crypto
+
+See also : 
+ - ECRIXindex
+ - EFCRIXindex
+ - CRIXfamdiff
+ - CRIXfamdiffloss
+ - FDAXloss
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
+
+Author : Simon Trimborn
+
+Submitted :  Mon, May 30 2016 by Simon Trimborn
+
+Datafile : CRIXaic.RData, ECRIXaic.RData, EFCRIXaic.RData
+
+Example : Matrix with the members in the indices.

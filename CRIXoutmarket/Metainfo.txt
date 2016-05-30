@@ -1,0 +1,42 @@
+
+Name of Quantlet : CRIXoutmarket
+
+Published in :  'CRIX - a CRyptocurrency IndeX'
+
+Description : 'CRIXoutmarket gives a plot which shows the performance of the
+               indices S&P500, DAX, STI, RTSI and ATHEX against CRIX.'
+
+Keywords : 
+ - CRIX
+ - index
+ - cryptocurrency
+ - crypto
+ - plot
+ - 'S&P500'
+ - btc
+ - bitcoin
+ - dax
+ - sti
+ - rtsi
+ - athex
+ - performance
+
+See also : 
+ - CRIXindex
+ - CRIXhnoptions
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
+
+Author : Simon Trimborn
+
+Submitted :  Fri, December 04 2015 by Simon Trimborn
+
+Datafile : 
+ - crix.csv
+ - 'SP500_index.csv'
+ - 'DAX_index.csv'
+ - 'STI_index.csv'
+ - 'RTSI_index.csv'
+ - 'ATHEX_index.csv'
+
+Example : 'Plot with S&P500, DAX, STI, RTSI, ATHEX and the CRIX.'

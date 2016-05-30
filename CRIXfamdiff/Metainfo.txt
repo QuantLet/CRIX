@@ -1,0 +1,40 @@
+
+Name of Quantlet : CRIXfamdiff
+
+Published in :  'CRIX or evaluating blockchain based currencies'
+
+Description : CRIXfamdiff gives a plot which shows the differences between the indices in the CRIX family and the total market. The data were calculated with the code CRIXcode.R.
+
+Keywords : 
+ - CRIX
+ - ECRIX
+ - EFCRIX
+ - index
+ - cryptocurrency
+ - crypto
+ - plot
+
+See also : 
+ - CRIXcode
+ - CRIXindex
+ - ECRIXindex
+ - EFCRIXindex
+ - CRIXfamdiff
+ - CRIXfamdiffloss
+ - FDAXloss
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
+
+Author : Simon Trimborn
+
+Submitted :  Mon, May 30 2016 by Simon Trimborn
+
+Datafile : 
+ - crix.RData
+ - ecrix.RData
+ - efcrix.RData
+ - TMI.RData
+
+Example : Plot of the differences between the CRIX family indices and the total market.

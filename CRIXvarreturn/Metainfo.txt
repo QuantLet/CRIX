@@ -1,0 +1,35 @@
+
+Name of Quantlet : CRIXvarreturn
+
+Published in :  'CRIX - a CRyptocurrency IndeX'
+
+Description : 'CRIXvarreturn computes a matrix which compares the absolut return
+               and the variance, computed by a GARCH(1,1) model, of a CRIX and Bitcoin 
+               (btc) time series.'
+
+Keywords : 
+ - CRIX
+ - index
+ - cryptocurrency
+ - crypto
+ - btc
+ - bitcoin
+ - returns
+ - variance
+ - garch
+
+See also : 
+ - CRIXindex
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+
+Author : Simon Trimborn
+
+Submitted :  Fri, December 04 2015 by Simon Trimborn
+
+Datafile : 
+ - crix.csv
+ - 'btc_index.csv'
+
+Example : A matrix with return and variance for btc and the CRIX.
