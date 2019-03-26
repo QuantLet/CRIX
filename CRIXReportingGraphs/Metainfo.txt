@@ -1,0 +1,38 @@
+Name of Quantlet : CRIXReportingGraph
+
+Published in :  'CRIX or evaluating blockchain based currencies'
+
+Description : Contains the Code to create the Plots for Regular Reporting
+
+Keywords : 
+ - CRIX
+ - ECRIX
+ - EFCRIX
+ - FDAX
+ - FIPC
+ - index
+ - AIC
+ - cryptocurrency
+ - crypto
+ - non parametric
+
+See also : 
+ - CRIXindex
+ - ECRIXindex
+ - EFCRIXindex
+ - CRIXfamdiff
+ - CRIXfamdiffloss
+ - CRIXmembers
+ - FDAXloss
+ - CRIXhnoptions
+ - CRIXoutmarket
+ - CRIXoutmarketTERES
+ - CRIXvarreturn
+
+Author : Marvin Gauer
+
+Submitted :  Mon, March 25 2019 by Marvin Gauer
+
+Datafile : 
+
+Example: 
